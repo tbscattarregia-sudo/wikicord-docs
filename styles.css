@@ -10,7 +10,7 @@ body {
   height: 100vh;
 }
 
-/* sidebar */
+/* SIDEBAR */
 .sidebar {
   width: 260px;
   background: #0d0d12;
@@ -37,27 +37,28 @@ nav a:hover {
   color: #00f2ff;
 }
 
+nav a.active {
+  color: #00f2ff;
+  border-left: 2px solid #00f2ff;
+  padding-left: 6px;
+}
+
 .sidebar-footer {
   margin-top: auto;
   font-size: 11px;
   color: #555;
 }
 
-/* content */
+/* CONTENT */
 .content {
   flex: 1;
   padding: 40px;
   overflow-y: auto;
 }
 
-/* typography */
-h1 {
-  color: #00f2ff;
-}
-
-h2 {
-  color: #7df9ff;
-}
+/* TEXTO */
+h1 { color: #00f2ff; }
+h2 { color: #7df9ff; }
 
 pre {
   background: #0d0d12;
@@ -65,9 +66,26 @@ pre {
   border: 1px solid #00f2ff22;
 }
 
-/* logs */
+/* LOGS */
 .log {
   font-size: 12px;
   color: #6c6c88;
   margin-top: 20px;
+}
+
+/* HEADER DE PÁGINA */
+.page-header {
+  border-bottom: 1px solid #00f2ff22;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.page-id {
+  font-size: 12px;
+  color: #555;
+}
+
+/* SELECCIÓN */
+::selection {
+  background: #00f2ff33;
 }
