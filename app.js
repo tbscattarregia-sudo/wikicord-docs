@@ -14,22 +14,17 @@ async function loadPage(page) {
 function setActiveLink(hash) {
   links.forEach(link => {
     link.classList.remove("active");
-    if (link.getAttribute("href") === hash) {
-      link.classList.add("active");
-    }
+    if (link.getAttribute("href") === hash) link.classList.add("active");
   });
 }
 
 function router() {
   let hash = window.location.hash;
-
   if (!hash) {
     hash = "#/overview";
     window.location.hash = hash;
   }
-
   const page = hash.replace("#/", "");
-
   loadPage(page);
   setActiveLink(hash);
 }

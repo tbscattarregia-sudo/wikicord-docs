@@ -33,9 +33,7 @@ nav a {
   margin: 6px 0;
 }
 
-nav a:hover {
-  color: #00f2ff;
-}
+nav a:hover { color: #00f2ff; }
 
 nav a.active {
   color: #00f2ff;
@@ -49,14 +47,12 @@ nav a.active {
   color: #555;
 }
 
-/* CONTENT */
 .content {
   flex: 1;
   padding: 40px;
   overflow-y: auto;
 }
 
-/* TEXTO */
 h1 { color: #00f2ff; }
 h2 { color: #7df9ff; }
 
@@ -66,14 +62,12 @@ pre {
   border: 1px solid #00f2ff22;
 }
 
-/* LOGS */
 .log {
   font-size: 12px;
   color: #6c6c88;
   margin-top: 20px;
 }
 
-/* HEADER DE PÁGINA */
 .page-header {
   border-bottom: 1px solid #00f2ff22;
   margin-bottom: 20px;
@@ -85,7 +79,6 @@ pre {
   color: #555;
 }
 
-/* SELECCIÓN */
 ::selection {
   background: #00f2ff33;
 }
